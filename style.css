@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, serif;
+  line-height: 1.7;
+  background: #fafafa;
+  color: #222;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 22px;
+}
+
+.site-header {
+  padding-bottom: 18px;
+  margin-bottom: 26px;
+  border-bottom: 2px solid #222;
+}
+
+.site-header h1 {
+  font-size: 2.1rem;
+  margin-bottom: 6px;
+}
+
+.tagline {
+  color: #555;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.nav {
+  display: flex;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #0a58ca;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding-top: 6px;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  margin-bottom: 14px;
+}
+
+.post-list {
+  list-style: none;
+}
+
+.post-list li {
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.post-list a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #222;
+}
+
+.post-list a:hover {
+  color: #0a58ca;
+}
+
+.date {
+  display: block;
+  margin-top: 6px;
+  color: #666;
+  font-style: italic;
+}
+
+article h2 {
+  margin-bottom: 6px;
+}
+
+article .date {
+  margin-bottom: 16px;
+}
+
+article p {
+  margin-bottom: 14px;
+}
+
+.footer {
+  margin-top: 40px;
+  padding-top: 18px;
+  border-top: 1px solid #ccc;
+  color: #666;
+  font-size: 0.95rem;
+}
