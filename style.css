@@ -67,9 +67,8 @@ body {
 .post-list a {
   font-size: 1.25rem;
   text-decoration: none;
-  color: #222;
+  color: #2563eb; /* soft readable blue */
 }
-
 .post-list a:hover {
   color: #0a58ca;
 }
@@ -148,4 +147,11 @@ main.content {
   margin-top: 8px;
   font-style: italic;
   opacity: 0.75;
+}
+.post-list a {
+  color: #2563eb; /* readable soft blue */
+}
+
+.post-list a:hover {
+  color: #1d4ed8;
 }
