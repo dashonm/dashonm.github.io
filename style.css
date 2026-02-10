@@ -155,3 +155,14 @@ main.content {
 .post-list a:hover {
   color: #1d4ed8;
 }
+/* Article text color (newsletter pages) */
+article p {
+  color: #334155; /* soft readable blue-gray */
+}
+
+/* Article headings */
+article h1,
+article h2,
+article h3 {
+  color: #1d4ed8; /* clean readable blue */
+}
