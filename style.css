@@ -100,3 +100,52 @@ article p {
   color: #666;
   font-size: 0.95rem;
 }
+body {
+  background-color: #eaf3ff; /* soft baby blue */
+  color: #1f2937; /* dark gray text for readability */
+  line-height: 1.6;
+  font-size: 18px;
+}
+main.content {
+  background-color: #ffffff;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 32px;
+  border-radius: 12px;
+}
+a {
+  color: #2563eb; /* calm blue */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.date {
+  font-style: italic;
+  color: #6b7280;
+}
+body {
+  line-height: 1.6;
+  font-size: 18px;
+}
+main.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.post-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-list li {
+  margin: 24px 0;
+}
+
+.post-list .date {
+  display: block;
+  margin-top: 8px;
+  font-style: italic;
+  opacity: 0.75;
+}
