@@ -185,3 +185,11 @@ main.content h2 {
 main.content .date {
   color: #3b5ea8;
 }
+/* Article page text color */
+.container h1 {
+  color: #1e3a8a; /* deep cool blue */
+}
+
+.container p {
+  color: #1f3b6f; /* readable dark blue */
+}
