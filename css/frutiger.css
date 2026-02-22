@@ -176,16 +176,27 @@ body::after {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  perspective: 800px;
 }
 
 .palm-icon {
-width: 70px;
-  height: auto;
-  animation: spinPalm 25s linear infinite;
-  filter: drop-shadow(0 0 14px rgba(0,255,200,0.6));
+  width: 60px;
+  height: 60px;
+  animation: spinPalm 6s linear infinite;
+  transform-origin: 50% 50%;
+  will-change: transform;
+  backface-visibility: visible;
 }
 
 @keyframes spinPalm {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  0%   { transform: rotate(0deg) rotateY(0deg); }
+  25%  { transform: rotate(3deg) rotateY(18deg); }
+  50%  { transform: rotate(0deg) rotateY(0deg); }
+  75%  { transform: rotate(-3deg) rotateY(-18deg); }
+  100% { transform: rotate(0deg) rotateY(0deg); }
 }
+
+  
+}
+
+  
