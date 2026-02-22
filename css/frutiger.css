@@ -178,8 +178,8 @@ body::after {
   margin-top: 20px;
 }
 
-.top-palm img {
-  width: 70px;
+.palm-icon {
+width: 70px;
   height: auto;
   animation: spinPalm 25s linear infinite;
   filter: drop-shadow(0 0 14px rgba(0,255,200,0.6));
