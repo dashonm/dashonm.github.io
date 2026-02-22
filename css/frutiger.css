@@ -171,3 +171,21 @@ body::after {
     grid-template-columns: 1fr;
   }
 }
+/* Top Floating Palm */
+.top-palm {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.top-palm img {
+  width: 70px;
+  height: auto;
+  animation: spinPalm 25s linear infinite;
+  filter: drop-shadow(0 0 14px rgba(0,255,200,0.6));
+}
+
+@keyframes spinPalm {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
