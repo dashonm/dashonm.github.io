@@ -172,20 +172,18 @@ body::after {
   }
 }
 /* Top Floating Palm */
-.top-palm {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  perspective: 800px;
+.top-palm{
+  display:flex;
+  justify-content:center;
+  margin-top:20px;
+  perspective:800px;
 }
 
-.palm-icon {
-  width: 60px;
-  height: 60px;
-  animation: spinPalm 6s linear infinite;
-  transform-origin: 50% 50%;
-  will-change: transform;
-  backface-visibility: visible;
+.palm-emoji{
+  font-size:44px;
+  display:inline-block;
+  animation: spinPalm 6s ease-in-out infinite;
+  transform-origin:50% 50%;
 }
 
 @keyframes spinPalm {
