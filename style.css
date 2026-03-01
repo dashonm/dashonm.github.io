@@ -193,3 +193,12 @@ main.content .date {
 .container p {
   color: #1f3b6f; /* readable dark blue */
 }
+
+.post-image {
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  display: block;
+  margin: 18px auto;
+  border-radius: 18px;
+}
