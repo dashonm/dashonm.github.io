@@ -202,3 +202,114 @@ main.content .date {
   margin: 18px auto;
   border-radius: 18px;
 }
+
+/* ---------------------------
+   RIGHT SIDE LAYOUT + PROMPT BOX
+   --------------------------- */
+
+/* Make the main content area split into 2 columns */
+.content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Left side = your post grid takes up the remaining space */
+.grid {
+  flex: 1;
+}
+
+/* Right side = prompt generator sidebar */
+.prompt-box {
+  width: 320px;
+  padding: 18px;
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  box-shadow: 0 0 22px rgba(0, 207, 255, 0.28);
+
+  position: sticky;
+  top: 120px;
+}
+
+/* Title inside the box */
+.prompt-title {
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 14px;
+
+  color: #ffffff;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 198, 255, 0.85),
+    rgba(0, 114, 255, 0.85)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Small description text */
+.prompt-description {
+  margin-top: 12px;
+  font-size: 14px;
+  opacity: 0.92;
+}
+
+/* Button styling */
+.prompt-button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 11px 12px;
+
+  border-radius: 14px;
+  border: none;
+
+  font-weight: 800;
+  cursor: pointer;
+
+  color: #06202a;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 229, 255, 0.95),
+    rgba(0, 198, 255, 0.95)
+  );
+}
+
+.prompt-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 18px rgba(0, 207, 255, 0.35);
+}
+
+/* Output box where the prompt appears */
+.prompt-output {
+  margin-top: 12px;
+  padding: 12px;
+
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+
+  min-height: 70px;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+/* Mobile: stack it (right sidebar becomes below posts) */
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .prompt-box {
+    width: 100%;
+    position: static;
+  }
+}
