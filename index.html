@@ -70,14 +70,52 @@
   <a href="ai-content-creation-negatives-2026.html">Read More</a>
 </article>
 
-      
+<div class="prompt-box">
+
+  <div class="prompt-title">
+    AI Prompt Generator
+  </div>
+
+  <p class="prompt-description">
+    Click the button to generate an AI content prompt.
+  </p>
+
+  <button class="prompt-button" onclick="generatePrompt()">
+    Generate Prompt
+  </button>
+
+  <div class="prompt-output" id="promptOutput">
+    Your prompt will appear here.
+  </div>
+
+</div>
+
+</main>
   
    
-  </main>
 
   <footer class="glass" style="margin-top:16px; padding:14px; text-align:center;">
     <p>&copy; 2026 dashonm</p>
   </footer>
 </div>
+<script>
+function generatePrompt(){
+
+const prompts = [
+"Create a YouTube video idea using AI editing tools",
+"Write a TikTok hook explaining how AI helps creators",
+"Generate 5 AI business ideas for content creators",
+"Write a blog intro about the future of AI content",
+"Create a 7 day AI content strategy",
+"Generate a viral YouTube Shorts idea using AI",
+"Write a post explaining how AI speeds up video editing"
+];
+
+const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
+
+document.getElementById("promptOutput").innerText = randomPrompt;
+
+}
+</script>
 </body>
 </html>
