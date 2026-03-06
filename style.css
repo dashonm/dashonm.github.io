@@ -313,10 +313,10 @@ main.content .date {
     position: static;
   }
 }
-.hero-image {
+.top-image img {
     width: 70%;
     max-width: 700px;
     height: auto;
     display: block;
-    margin: 20px auto;
+    margin: 0 auto;
 }
