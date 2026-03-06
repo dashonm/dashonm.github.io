@@ -320,3 +320,11 @@ main.content .date {
     display: block;
     margin: 0 auto;
 }
+.post-card {
+    background: #ffffff;
+    border-radius: 28px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
