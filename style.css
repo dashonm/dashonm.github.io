@@ -328,3 +328,11 @@ main.content .date {
     max-width: 900px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
+article img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 20px auto;
+}
